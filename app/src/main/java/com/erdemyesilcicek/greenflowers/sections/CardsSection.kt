@@ -1,4 +1,4 @@
-package com.erdemyesilcicek.greenflowers
+package com.erdemyesilcicek.greenflowers.sections
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -23,6 +23,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.erdemyesilcicek.greenflowers.R
 import com.erdemyesilcicek.greenflowers.data.Card
 import com.erdemyesilcicek.greenflowers.ui.theme.BlueEnd
 import com.erdemyesilcicek.greenflowers.ui.theme.BlueStart
@@ -120,12 +121,23 @@ fun CardItem(index : Int){
             Spacer(modifier = Modifier.height(8.dp))
 
             Text(
+                text = "${card.balance}",
+                color = Color.White,
+                fontSize = 17.sp,
+                fontWeight = FontWeight.Bold
+            )
+            Text(
+                text = card.cardNumber,
+                color = Color.White,
+                fontSize = 17.sp,
+                fontWeight = FontWeight.Bold
+            )
+            Text(
                 text = card.cardName,
                 color = Color.White,
                 fontSize = 17.sp,
                 fontWeight = FontWeight.Bold
             )
-
         }
     }
 }

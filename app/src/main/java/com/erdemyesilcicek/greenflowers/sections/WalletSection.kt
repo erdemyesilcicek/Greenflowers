@@ -1,4 +1,4 @@
-package com.erdemyesilcicek.greenflowers
+package com.erdemyesilcicek.greenflowers.sections
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable

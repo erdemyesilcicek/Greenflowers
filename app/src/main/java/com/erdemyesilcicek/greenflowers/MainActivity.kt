@@ -1,6 +1,5 @@
 package com.erdemyesilcicek.greenflowers
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -18,6 +17,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.erdemyesilcicek.greenflowers.sections.BottomNavigationBar
+import com.erdemyesilcicek.greenflowers.sections.CardsSection
+import com.erdemyesilcicek.greenflowers.sections.FinanceSection
+import com.erdemyesilcicek.greenflowers.sections.WalletSection
 import com.erdemyesilcicek.greenflowers.ui.theme.GreenflowersTheme
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
@@ -30,19 +33,6 @@ class MainActivity : ComponentActivity() {
 
                 SetBarColor(color = MaterialTheme.colorScheme.background)
                 HomeScreen()
-
-                /*
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    println(innerPadding)
-                    HomeScreen()
-
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-                 */
-
             }
         }
     }
@@ -75,27 +65,8 @@ fun HomeScreen() {
             WalletSection()
             CardsSection()
             Spacer(modifier = Modifier.height(16.dp))
-            //FinanceSection()
+            FinanceSection()
             //CurrenciesSection()
         }
     }
 }
-
-
-/*
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    GreenflowersTheme {
-        Greeting("Android")
-    }
-}
-*/

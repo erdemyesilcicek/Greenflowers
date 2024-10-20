@@ -1,6 +1,5 @@
-package com.erdemyesilcicek.greenflowers
+package com.erdemyesilcicek.greenflowers.sections
 
-import android.graphics.drawable.Icon
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Row
 import androidx.compose.material.icons.Icons
