@@ -19,6 +19,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.erdemyesilcicek.greenflowers.sections.BottomNavigationBar
 import com.erdemyesilcicek.greenflowers.sections.CardsSection
+import com.erdemyesilcicek.greenflowers.sections.CurrenciesSection
 import com.erdemyesilcicek.greenflowers.sections.FinanceSection
 import com.erdemyesilcicek.greenflowers.sections.WalletSection
 import com.erdemyesilcicek.greenflowers.ui.theme.GreenflowersTheme
@@ -66,7 +67,7 @@ fun HomeScreen() {
             CardsSection()
             Spacer(modifier = Modifier.height(16.dp))
             FinanceSection()
-            //CurrenciesSection()
+            CurrenciesSection()
         }
     }
 }
